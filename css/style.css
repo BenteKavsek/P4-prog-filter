@@ -19,6 +19,11 @@ main{
     width: 100%;
 }
 
+.filter{
+    width: 5rem;
+    height: 5rem;
+}
+
 .games{
     width: 100%;
     display: flex;
@@ -32,6 +37,12 @@ main{
     list-style: none;
     width: 25rem;
     height: 30rem;
+    transition: 0.2s transform;
+}
+
+.game:hover{
+    transform: scale(1.02) translateY(-0.7rem);
+    cursor: pointer;
 }
 
 .game img{

@@ -21,6 +21,7 @@ main{
 
 .inputs{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
     gap: 4rem;
@@ -38,6 +39,19 @@ main{
     width: 5rem;
     height: 5rem;
     margin-right: 2rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background: lightgray;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.filter:checked{
+    background: lightsalmon;
+}
+
+.filter:checked ~ .label{
+    text-decoration: underline;
 }
 
 .games{

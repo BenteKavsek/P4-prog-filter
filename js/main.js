@@ -1,6 +1,10 @@
 let allGames = document.getElementsByClassName("game");
 let filters = document.getElementsByClassName("filter");
 
+for (let i = 0; i < filters.length; i++){
+    filters[i].checked = true;
+}
+
 let gtaFilter = document.getElementById("checkbox-gta");
 gtaFilter.onchange = function(){
     if(gtaFilter.checked === true){

@@ -19,9 +19,25 @@ main{
     width: 100%;
 }
 
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.inputs div{
+    display: flex;
+    align-items: center;
+    width: 25rem;
+}
+
 .filter{
     width: 5rem;
     height: 5rem;
+    margin-right: 2rem;
 }
 
 .games{
@@ -29,7 +45,6 @@ main{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
     align-items: center;
 }
 
@@ -38,6 +53,7 @@ main{
     width: 25rem;
     height: 30rem;
     transition: 0.2s transform;
+    flex-grow: 1;
 }
 
 .game:hover{
